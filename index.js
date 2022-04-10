@@ -2,7 +2,7 @@ const express = require("express");
 
 const { readJsonFile, searchCity } = require("./src/city.js");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 80;
 const app = express();
 
 app.get("/:city", (req, res) => {
