@@ -6,7 +6,6 @@ let cities;
 const readJsonFile = () => {
   file = fs.readFileSync("./src/cities.json");
   cities = JSON.parse(file);
-  console.log(cities);
 };
 
 const searchCity = (name) => {
