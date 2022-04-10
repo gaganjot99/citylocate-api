@@ -1,0 +1,26 @@
+{
+  "name": "citylocate-api",
+  "version": "1.0.0",
+  "description": "api to get gps coordinates of any major indian city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaganjot99/citylocate-api.git"
+  },
+  "keywords": [
+    "cityapi",
+    "indiancitiesapi"
+  ],
+  "author": "gagan kahal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaganjot99/citylocate-api/issues"
+  },
+  "homepage": "https://github.com/gaganjot99/citylocate-api#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
