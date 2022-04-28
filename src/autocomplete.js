@@ -81,7 +81,7 @@ class Trie {
     for (let level = 0; level < key.length; level++) {
       index = this.getIndex(key[level]);
       if (currentNode.children[index] == null) {
-        return false;
+        return [key];
       }
       currentNode = currentNode.children[index];
     }
