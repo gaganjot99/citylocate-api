@@ -9,7 +9,14 @@ const readJsonFile = () => {
 };
 
 const searchCity = (name) => {
+  console.log(cities[name]);
   return cities[name];
 };
 
-module.exports = { readJsonFile, searchCity };
+const addCity = (info) => {
+  console.log(info);
+  cities[info.name] = info.location;
+  return cities[info.name];
+};
+
+module.exports = { readJsonFile, searchCity, addCity };
