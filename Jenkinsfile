@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('build') {
-      steps {
-        bat 'node --version'
+      parallel {
+        stage('build') {
+          steps {
+            bat 'node --version'
+          }
+        }
+
+        stage('install dep') {
+          steps {
+            bat 'npm i'
+          }
+        }
+
       }
     }
 
